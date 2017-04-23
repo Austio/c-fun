@@ -99,5 +99,24 @@ char str1[] = "Hello";
 char *str2 = "Goodbye";
 
 
+```
+char str1[] = "Hello";
+char *str2 = "Goodbye";
+printf("%d %d %s\n", &str1, str1, str1);
+printf("%d %d %s\n", &str2, str2, str2);
 
+Returns something like
+2686746 2686746 Hello
+2686740 4206628 Goodbye
+
+char str1[] = "Hello";
+char *str2 = "Goodbye";
+str2 = &str1; /* reassigns pointer to point to str1 */
+printf("%d %d %s\n", &str1, str1, str1);
+printf("%d %d %s\n", &str2, str2, str2);
+
+Returns something like
+2686746 2686746 Hello
+2686740 2686746 Hello
+```
 
