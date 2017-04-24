@@ -120,3 +120,10 @@ Returns something like
 2686740 2686746 Hello
 ```
 
+### Multiple Indirection
+-aka dereferencing, multiple indirection
+The name for when you have a pointer to a pointer.
+
+
+
+
